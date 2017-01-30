@@ -1,6 +1,6 @@
-# Ono academic college
+# Ono-MBA
 
-Landing page for opening days in Ono academic college
+Landing page for Ono-MBA college
 
 ## License
 
