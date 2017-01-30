@@ -1,10 +1,10 @@
 ---
 site:
-  domain: ono.way2cu.work
+  domain: onomba.way2cu.work
   # subdomain: test
   # alias: domain.com
   root: httpdocs
-  username: ono
+  username: ono_mba
   caracal_branch: "v0.2"
   # ip_address: 0.0.0.0
   # owner: Some Person
