@@ -382,3 +382,121 @@ div.half.grey ul li em {
   font-style: normal;
   font-weight: 700;
 }
+
+/*
+ * Article popups
+*/
+div.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+
+  background-color: white;
+  box-sizing: border-box;
+  padding: 1em;
+  border: 1px solid @color_grey;
+  z-index: 100000;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 90vh;
+  width: 100%;
+}
+
+div.popup a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  border: 1px solid black;
+}
+
+div.popup a svg {
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+
+div.popup h3,
+div.popup h2 {
+  color: @color_green;
+}
+
+
+
+div#technology:target,
+div#strategy:target,
+div#advertisment:target,
+div#funding:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*
+ * May style
+*/
+
+section.intro.may {
+  min-height: 450px;
+}
+
+section.intro.may span svg {
+  bottom: 1em;
+}
+
+section.intro.may article {
+  text-align: initial;
+  font-size: inherit;
+}
+
+section.intro.may article h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+section.intro.may article p {
+  color: @color_grey;
+  margin: 0;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+section.intro.may ul li {
+  padding: 0.5em;
+
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 0;
+    height: 0;
+    line-height: 0;
+
+    border: 0.5em solid transparent;
+    border-right-color: @color_green;
+  }
+}
+
+section.intro.may ul li a {
+    color: @color_grey;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+    }
+}
+
+/*
+ * Section discount may
+*/
+
+section.discount.may svg {
+  display: block;
+  width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 1em;
+  margin: 0 auto;
+}

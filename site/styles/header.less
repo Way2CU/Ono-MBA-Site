@@ -29,6 +29,23 @@ header a.logo img {
   height: auto;
 }
 
+header a.contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: @color_white;
+  text-decoration: none;
+  background-color: @color_green;
+  padding: 1em 2em;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: fade(@color_green, 70%);
+  }
+}
+
 header a.phone {
   display: inline-block;
   vertical-align: middle;
