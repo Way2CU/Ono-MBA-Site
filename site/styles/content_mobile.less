@@ -7,174 +7,190 @@
  */
 
 .center {
-  text-align: center;
+	text-align: center;
 }
 
 .grey {
-  background-color: @color_light_grey;
+	background-color: @color_light_grey;
 }
 
 .green {
-  background-color: lighten(@color_green, 40%);
+	background-color: lighten(@color_green, 40%);
 }
 
 section {
-  display: block;
-  position: relative;
+	display: block;
+	position: relative;
 }
 
 section.intro {
-  background-color: @color_green;
-  background-image: url(../images/mobile-header.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% auto;
-  min-height: 360px;
+	background-color: @color_green;
+	background-image: url(../images/mobile-header.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	min-height: 360px;
 }
 
 section.grey,
 section.green {
-    padding: 0;
+	padding: 0;
 }
 
 section.green h2,
 section.grey h2 {
-  margin: 0;
-  text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  font-size: 2em;
-  color: @color_white;
+	margin: 0;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 2em;
+	color: @color_white;
 }
 
 section.green h2 {
-  background-color: @color_green;
+	background-color: @color_green;
 }
 
 section.grey h2 {
-  background-color: @color_grey;
+	background-color: @color_grey;
 }
 
 section.intro article {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  background-color: fade(@color_white, 90%);
-  color: @color_green;
-  width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: fade(@color_white, 90%);
+	color: @color_green;
+	width: 95%;
 }
 
 section.intro article h1 {
-  font-size: 1.5em;
-  margin-top: 0px;
+	font-size: 1.5em;
+	margin-top: 0px;
 }
 
 section.intro article p {
-  font-size: 1em;
-  font-weight: 700;
+	font-size: 1em;
+	font-weight: 700;
 }
 
 section.intro article p:last-of-type {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 section.pattern,
 section.discount {
-  background-color: @color_green;
-  background-image: url(../images/circle.svg);
-  background-repeat: no-repeat;
-  background-position: center 10px;
-  background-size: 100% auto;
+	background-color: @color_green;
+	background-image: url(../images/circle.svg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: 100% auto;
 }
 
 section.pattern {
-  padding-top: 6em;
-  text-align: center;
-  background-color: @color_light_grey;
+	padding-top: 6em;
+	text-align: center;
+	background-color: @color_light_grey;
 }
 
 section.pattern ul {
-  background-color: @color_white;
+	background-color: @color_white;
 }
 
 section.intro svg {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  margin-left: -1.5em;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  box-shadow: 0px 0px 3px fade(@color_grey, 60%);
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -1.5em;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px fade(@color_grey, 60%);
 }
 
 div.half,
 div.form_wrap {
-  display: block;
-  padding-top: 4em;
-  padding-bottom: 2em;
+	display: block;
+	padding-top: 4em;
+	padding-bottom: 2em;
 }
 
 div.half {
-  text-align: center;
+	text-align: center;
 }
 
 div.half.grey {
-  padding: 0;
+	padding: 0;
 }
 
 section.pattern h2,
 div.form_wrap > p,
 div.half h2 {
-  margin: 0;
-  padding-bottom: 0.5em;
-  font-size: 1.5em;
+	margin: 0;
+	padding-bottom: 0.5em;
+	font-size: 1.5em;
 }
 
 div.form_wrap > p {
-  font-weight: 700;
-  text-align: center;
-  color: @color_grey;
-  border-bottom: 2px solid @color_grey;
+	font-weight: 700;
+	text-align: center;
+	color: @color_grey;
+	border-bottom: 2px solid @color_grey;
 }
 
 section.pattern > p {
-  margin-top: 0;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-size: 1em;
+	margin-top: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: 1em;
 }
 
 section.pattern h2,
 div.half h2 {
-  margin-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  color: @color_green;
+	margin-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	color: @color_green;
 }
 
 div.discount {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: @color_white;
-  background-color: @color_green;
-  border: 3px dashed @color_white;
-  transform: rotate(5deg);
-  width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: @color_white;
+	background-color: @color_green;
+	border: 3px dashed @color_white;
+	transform: rotate(5deg);
+	width: 80%;
+}
+
+section.discount.may h3 {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+section.discount.may svg {
+	display: block;
+	width: 90vw;
+	padding-bottom: 1em;
+	margin: 0 auto;
+}
+
+section.discount.may label:nth-of-type(4) {
+	display: none;
 }
 
 div.discount p {
-  margin: 0px;
-  font-size: 1.5em;
-  line-height: 100%;
+	margin: 0px;
+	font-size: 1.5em;
+	line-height: 100%;
 }
 
 div.discount strong {
-  font-size: 1.1em;
+	font-size: 1.1em;
 }
 
 /*
@@ -182,100 +198,100 @@ div.discount strong {
  */
 
 div.form_wrap {
-  padding: 1em;
-  box-sizing: border-box;
-  background-color: @color_light_grey;
+	padding: 1em;
+	box-sizing: border-box;
+	background-color: @color_light_grey;
 }
 
 div.form_wrap form {
-  display: block;
-  padding-top: 2em;
+	display: block;
+	padding-top: 2em;
 }
 
 div.form_wrap form label {
-  display: block;
-  margin-bottom: 1em;
-  position: relative;
+	display: block;
+	margin-bottom: 1em;
+	position: relative;
 }
 
 @form_icon_size: 50;
 div.form_wrap form label:before {
-  @icon_count: 4;
-  content: "";
-  position: absolute;
-  top: -25px;
-  right: 0px;
-  background-image: url(../images/form-icons.svg);
-  background-repeat: no-repeat;
-  background-size: unit(@form_icon_size, px) unit(@form_icon_size * @icon_count, px);
-  background-position: 0 0;
-  width: unit(@form_icon_size, px);
-  height: unit(@form_icon_size, px);
+	@icon_count: 4;
+	content: "";
+	position: absolute;
+	top: -25px;
+	right: 0px;
+	background-image: url(../images/form-icons.svg);
+	background-repeat: no-repeat;
+	background-size: unit(@form_icon_size, px) unit(@form_icon_size * @icon_count, px);
+	background-position: 0 0;
+	width: unit(@form_icon_size, px);
+	height: unit(@form_icon_size, px);
 }
 
 div.form_wrap form label:nth-of-type(1):before {
-  background-position: 0 unit(-(@form_icon_size * 0), px);
+	background-position: 0 unit(-(@form_icon_size * 0), px);
 }
 
 div.form_wrap form label:nth-of-type(2):before {
-  background-position: 0 unit(-(@form_icon_size * 1), px);
+	background-position: 0 unit(-(@form_icon_size * 1), px);
 }
 
 div.form_wrap form label:nth-of-type(3):before {
-  background-position: 0 unit(-(@form_icon_size * 2), px);
+	background-position: 0 unit(-(@form_icon_size * 2), px);
 }
 
 div.form_wrap form label:nth-of-type(4):before {
-  background-position: 0 unit(-(@form_icon_size * 3), px);
+	background-position: 0 unit(-(@form_icon_size * 3), px);
 }
 
 div.form_wrap form label:nth-of-type(n+5):before {
-  display: none;
+	display: none;
 }
 
 div.form_wrap form label span {
-  display: block;
-  text-align: right;
-  padding-right: 50px;
+	display: block;
+	text-align: right;
+	padding-right: 50px;
 }
 
 div.form_wrap form label select,
 div.form_wrap form label input {
-  display: block;
-  padding: 1em;
-  background-color: @color_white;
-  border: 1px solid @color_light_grey;
-  width: 90%;
-  transition: all 0.3s;
+	display: block;
+	padding: 1em;
+	background-color: @color_white;
+	border: 1px solid @color_light_grey;
+	width: 90%;
+	transition: all 0.3s;
 }
 
 div.form_wrap form label input:hover {
-  border: 1px solid lighten(@color_green, 10%);
+	border: 1px solid lighten(@color_green, 10%);
 }
 
 div.form_wrap form label input:focus {
-  border: 1px solid @color_green;
+	border: 1px solid @color_green;
 }
 
 
 div.form_wrap div.controls {
-  text-align: center;
+	text-align: center;
 }
 
 div.form_wrap div.controls button {
-  display: inline-block;
-  padding: 0.7em 1.5em;
-  border: 1px solid @color_light_grey;
-  background-color: @color_green;
-  color: @color_white;
-  font-size: 1.2em;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s;
+	display: inline-block;
+	padding: 0.7em 1.5em;
+	border: 1px solid @color_light_grey;
+	background-color: @color_green;
+	color: @color_white;
+	font-size: 1.2em;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s;
 }
 
 div.form_wrap div.controls button:hover {
-  background-color: lighten(@color_green, 5%);
+	background-color: lighten(@color_green, 5%);
 }
 
 /*
@@ -283,234 +299,220 @@ div.form_wrap div.controls button:hover {
  */
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 ul.image_list.sponsers {
-  text-align: center;
-  padding: 0;
+	text-align: center;
+	padding: 0;
 }
 
 ul li.stock.feature {
-  display: block;
-  border-bottom: 1px solid @color_grey;
+	display: block;
+	border-bottom: 1px solid @color_grey;
 }
 
 ul li.stock.feature {
-  padding: 0.5em;
+	padding: 0.5em;
 }
 
 ul.image_list li {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  width: 50%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 50%;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 ul.image_list li img {
-  border: 1px solid lighten(@color_grey, 40%);
-  box-shadow: 0px 0px 3px fade(@color_grey, 60%);
+	border: 1px solid lighten(@color_grey, 40%);
+	box-shadow: 0px 0px 3px fade(@color_grey, 60%);
 }
 
 ul.image_list.sponsers li {
-  margin: 0;
-  width: 50%;
+	margin: 0;
+	width: 50%;
 }
 
 ul.image_list.sponsers img {
-  border: none;
-  box-shadow: none;
+	border: none;
+	box-shadow: none;
 }
 
 ul.image_list li h4 {
-  margin: 0;
+	margin: 0;
 }
 
 ul.image_list li p {
-  margin: 0;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+	margin: 0;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 }
 
 ul li.stock.feature svg {
-  width: 80px;
-  height: 80px;
-  fill: @color_green;
+	width: 80px;
+	height: 80px;
+	fill: @color_green;
 }
 
 ul li.stock.feature > p {
-  margin-bottom: 0;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 1em;
-  font-size: 1em;
+	margin-bottom: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	font-size: 1em;
 }
 
 div.half.grey h2 {
-  margin-bottom: 0;
-  padding-top: 0.5em;
-  background-color: @color_grey;
-  color: @color_white;
-  font-size: 1.5em;
+	margin-bottom: 0;
+	padding-top: 0.5em;
+	background-color: @color_grey;
+	color: @color_white;
+	font-size: 1.5em;
 }
 
 div.half.grey svg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
-  height: 50px;
-  fill: @color_green;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	height: 50px;
+	fill: @color_green;
 }
 
 div.half.grey ul {
-  padding: 2em;
-  text-align: right;
+	padding: 2em;
+	text-align: right;
 }
 
 div.half.grey ul li {
-  padding-bottom: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 div.half.grey ul li em {
-  display: block;
-  padding: 0em 0.5em;
-  font-style: normal;
-  font-weight: 700;
+	display: block;
+	padding: 0em 0.5em;
+	font-style: normal;
+	font-weight: 700;
 }
 
 /*
  * Article popups
-*/
+ */
 div.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  pointer-events: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	pointer-events: none;
 
-  background-color: white;
-  box-sizing: border-box;
-  padding: 1em;
-  border: 1px solid @color_grey;
-  z-index: 100000;
-  margin: 0;
-  width: 100%;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 1em;
+	border: 1px solid @color_grey;
+	z-index: 100000;
+	margin: 0;
+	width: 100%;
 }
 
 div.popup article {
-  overflow-y: auto;
-  max-height: 90vh;
+	overflow-y: auto;
+	max-height: 90vh;
 }
 
 div.popup:after {
-  content: '';
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-  height: 100px;
+	content: '';
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	height: 100px;
 }
 
 div.popup a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.5em;
-  border: 1px solid black;
-  background-color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.5em;
+	border: 1px solid black;
+	background-color: white;
 }
 
 div.popup a svg {
-  width: 1em;
-  height: 1em;
-  display: block;
+	width: 1em;
+	height: 1em;
+	display: block;
 }
 
 div.popup h3,
 div.popup h2 {
-  color: @color_green;
+	color: @color_green;
 }
-
-
 
 div#technology:target,
 div#strategy:target,
 div#advertisment:target,
 div#funding:target {
-    opacity: 1;
-    pointer-events: auto;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 /*
  * May style
-*/
+ */
 
 section.intro.may {
-  min-height: 450px;
+	min-height: 450px;
 }
 
 section.intro.may span svg {
-  bottom: 1em;
+	bottom: 1em;
 }
 
 section.intro.may article {
-  text-align: initial;
-  font-size: inherit;
+	text-align: initial;
+	font-size: inherit;
 }
 
 section.intro.may article h1 {
-  margin: 0;
-  padding-bottom: 0.5em;
-  text-align: center;
+	margin: 0;
+	padding-bottom: 0.5em;
+	text-align: center;
 }
 
 section.intro.may article p {
-  color: @color_grey;
-  margin: 0;
-  padding-bottom: 1.5em;
-  text-align: center;
+	color: @color_grey;
+	margin: 0;
+	padding-bottom: 1.5em;
+	text-align: center;
 }
 
 section.intro.may ul li {
-  padding: 0.5em;
+	padding: 0.5em;
 
-  &:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: '';
-    width: 0;
-    height: 0;
-    line-height: 0;
+	&:before {
+		display: inline-block;
+		vertical-align: middle;
+		content: '';
+		width: 0;
+		height: 0;
+		line-height: 0;
 
-    border: 0.5em solid transparent;
-    border-right-color: @color_green;
-  }
+		border: 0.5em solid transparent;
+		border-right-color: @color_green;
+	}
 }
 
 section.intro.may ul li a {
-    color: @color_grey;
-    transition: all 0.3s;
+	color: @color_grey;
+	transition: all 0.3s;
 
-    &:hover {
-      text-decoration: none;
-    }
-}
-
-/*
- * Section discount may
-*/
-
-section.discount.may svg {
-  display: block;
-  width: 90vw;
-  padding-top: 100px;
-  padding-bottom: 1em;
-  margin: 0 auto;
+	&:hover {
+		text-decoration: none;
+	}
 }

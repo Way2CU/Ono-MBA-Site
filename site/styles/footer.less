@@ -7,100 +7,103 @@
  */
 
 footer {
-  display: block;
-  padding-top: 40px;
-  text-align: center;
-  background-image: url(../images/desktop-foooter.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  position: relative;
+	display: block;
+	padding-top: 40px;
+	text-align: center;
+	background-image: url(../images/desktop-foooter.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: relative;
 }
 
 footer img {
-  display: inline-block;
-  width: 80%;
+	display: inline-block;
+	width: 80%;
 }
 
 footer div.half {
-  box-sizing: border-box;
-  padding: 4em;
-  margin-left: 5em;
+	box-sizing: border-box;
+	padding: 4em;
+	margin-left: 5em;
 }
 
 footer div.half > p {
-  font-size: 1.8em;
-  font-weight: 700;
-  color: @color_green;
+	font-size: 1.8em;
+	font-weight: 700;
+	color: @color_green;
 }
 
 footer div.half a {
-  padding: 0.5em 1em;
-  text-decoration: none;
-  font-size: 2em;
-  font-weight: 700;
-  display: inline-block;
-  vertical-align: middle;
-  color: @color_green;
-  border: 4px solid @color_green;
-  transition: all 0.3s;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: middle;
+	color: @color_green;
+	border: 4px solid @color_green;
+	transition: all 0.3s;
 }
 
 footer div.half a:hover {
-  background-color: @color_green;
-  color: @color_white;
-  border-color: @color_white;
+	background-color: @color_green;
+	color: @color_white;
+	border-color: @color_white;
 }
 
 footer div.half a:hover svg {
-  fill: @color_white;
+	fill: @color_white;
 }
 
 footer div.half a svg {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  width: 1.5em;
-  height: 1.5em;
-  fill: @color_green;
-  transition: all 0.3s;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	width: 1.5em;
+	height: 1.5em;
+	fill: @color_green;
+	transition: all 0.3s;
 }
 
 footer div.form_wrap {
-  background-color: fade(@color_white, 80%);
-  box-shadow: 0px 0px 3px fade(@color_grey, 60%);
+	background-color: fade(@color_white, 80%);
+	box-shadow: 0px 0px 3px fade(@color_grey, 60%);
+}
+
+footer.may div.form_wrap label:nth-of-type(4) {
+	display: none;
 }
 
 footer div.bottom {
-  margin-top: 40px;
-  background-color: black;
+	margin-top: 40px;
+	background-color: black;
 }
 
 footer div.bottom p {
-  margin: 0;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  background-color: black;
-  color: @color_white;
-  font-size: 1.5em;
+	margin: 0;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	background-color: black;
+	color: @color_white;
+	font-size: 1.5em;
 }
 
 /**
  * Copyright
  */
-
 footer div.copyright {
-  display: inline-block;
-  color: @color_white;
+	display: inline-block;
+	color: @color_white;
 }
 
 footer div.copyright a {
-  color: @color_white;
+	color: @color_white;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-  footer div.half {
-    margin-left: 3em;
-  }
+	footer div.half {
+		margin-left: 3em;
+	}
 }

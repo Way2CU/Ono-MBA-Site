@@ -64,20 +64,20 @@ section.intro.may ul li a {
 	transition: all 0.3s;
 
 	&:hover {
-		text-decoration: none;
+		color: @color_green;
 	}
 }
 
-/*
+/**
  * Section discount may
  */
-
 section.discount.may svg {
 	display: inline-block;
 	vertical-align: middle;
-	width: 50%;
-	height: 50%;
-	padding-top: 100px;
+}
+
+section.discount.may label:nth-of-type(4) {
+	display: none;
 }
 
 section {
@@ -536,5 +536,3 @@ div#funding:target {
 		top: -18px;
 	}
 }
-
-

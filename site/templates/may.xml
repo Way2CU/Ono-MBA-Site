@@ -22,8 +22,6 @@
 					<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
 				</a>
 
-
-
 				<cms:mobile>
 					<a href="url_Make().'#form_direct'" cms:eval="href" class="sign">
 						<cms:text constant="sign"/>
@@ -69,8 +67,6 @@
 			</section>
 
 			<!-- Popups -->
-
-			<!-- technology article -->
 			<div id="technology" class="popup">
 				<cms:module
 					name="articles"
@@ -83,7 +79,6 @@
 				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
 			</div>
 
-			<!-- strategy article -->
 			<div id="strategy" class="popup">
 				<cms:module
 					name="articles"
@@ -96,7 +91,6 @@
 				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
 			</div>
 
-			<!-- advertisment article -->
 			<div id="advertisment" class="popup">
 				<cms:module
 					name="articles"
@@ -109,7 +103,6 @@
 				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
 			</div>
 
-			<!-- funding article -->
 			<div id="funding" class="popup">
 				<cms:module
 					name="articles"
@@ -122,10 +115,12 @@
 				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
 			</div>
 
-
-
+			<!-- Discount -->
 			<section class="discount may">
-				<cms:svg file="ribbon.svg" />
+				<div class="half">
+					<h3><cms:text constant="title_form_may"/></h3>
+					<cms:svg file="ribbon.svg" />
+				</div>
 				<div class="form_wrap" id="form_direct">
 					<p><cms:text constant="title_form"/></p>
 					<cms:module
@@ -145,26 +140,7 @@
 					/>
 			</section>
 
-			<section>
-				<cms:module
-					name="articles"
-					action="show_list"
-					group="information"
-					template="parts/details.xml"
-					/>
-				<h3 class="center"><cms:text constant="title_sponsers"/></h3>
-				<ul class="image_list sponsers">
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="sponsers"
-						template="parts/sponser_gallery.xml"
-						/>
-				</ul>
-			</section>
-
 			<!-- Lecureres sections -->
-
 			<section class="grey">
 				<h2><cms:text constant="title_graduates"/></h2>
 				<ul class="image_list">
@@ -193,7 +169,8 @@
 					</cms:module>
 				</ul>
 			</section>
-			<footer id="footer">
+
+			<footer id="footer" class="may">
 				<cms:desktop>
 					<div class="half">
 						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
