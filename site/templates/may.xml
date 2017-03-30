@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<meta property="og:title" content="site_title" cms:constant="content"/>
+			<meta property="og:type" content="website" />
+			<meta property="og:url" content="http://openday.ono.ac.il" />
+			<meta property="og:image" content="http://openday.ono.ac.il/site/images/facebook.jpg"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:raw file="gtm.txt"/>
+			<cms:svg file="site-sprite.svg"/>
+
+			<!-- Top section of the site -->
+			<header>
+				<a  class="logo" href="url_Make()" cms:eval="href">
+					<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
+				</a>
+
+
+
+				<cms:mobile>
+					<a href="url_Make().'#form_direct'" cms:eval="href" class="sign">
+						<cms:text constant="sign"/>
+						<cms:svg file="site-sprite.svg" symbol="form"/>
+					</a>
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:svg file="site-sprite.svg" symbol="phone"/>
+					</a>
+				</cms:mobile>
+
+				<cms:desktop>
+					<!-- Contact us link -->
+					<a  class="contact" href="#footer">
+						<cms:text constant="cotact_us" />
+					</a>
+
+					<a
+						href="'tel:'.urlencode(Language::getText('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="phone"/>
+						<cms:svg file="site-sprite.svg" symbol="phone"/>
+					</a>
+				</cms:desktop>
+			</header>
+
+			<section class="intro may">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="main_article_may"
+					template="parts/may_header_article.xml"
+					/>
+
+				<span>
+					<cms:svg file="site-sprite.svg" symbol="arrow"/>
+				</span>
+			</section>
+
+			<!-- Popups -->
+
+			<!-- technology article -->
+			<div id="technology" class="popup">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="technology_article"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
+			</div>
+
+			<!-- strategy article -->
+			<div id="strategy" class="popup">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="strategy_article"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
+			</div>
+
+			<!-- advertisment article -->
+			<div id="advertisment" class="popup">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="advertisment_article"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
+			</div>
+
+			<!-- funding article -->
+			<div id="funding" class="popup">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="funding_article"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
+			</div>
+
+
+
+			<section class="discount may">
+				<cms:svg file="ribbon.svg" />
+				<div class="form_wrap" id="form_direct">
+					<p><cms:text constant="title_form"/></p>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact"
+						/>
+				</div>
+			</section>
+
+			<section class="pattern">
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="features"
+					template="parts/features.xml"
+					/>
+			</section>
+
+			<section>
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="information"
+					template="parts/details.xml"
+					/>
+				<h3 class="center"><cms:text constant="title_sponsers"/></h3>
+				<ul class="image_list sponsers">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="sponsers"
+						template="parts/sponser_gallery.xml"
+						/>
+				</ul>
+			</section>
+
+			<!-- Lecureres sections -->
+
+			<section class="grey">
+				<h2><cms:text constant="title_graduates"/></h2>
+				<ul class="image_list">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="graduates"
+						template="parts/gallery_images.xml"
+						>
+						<param name="title" value=""/>
+						<param name="description" value=""/>
+					</cms:module>
+				</ul>
+			</section>
+
+			<section class="green">
+				<h2><cms:text constant="title_lecturers"/></h2>
+				<ul class="image_list">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="lecturers"
+						template="parts/gallery_images.xml"
+						>
+						<param name="title" value=""/>
+					</cms:module>
+				</ul>
+			</section>
+			<footer id="footer">
+				<cms:desktop>
+					<div class="half">
+						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
+						<p><cms:text constant="slogan"/></p>
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<cms:svg file="site-sprite.svg" symbol="phone"/>
+						</a>
+					</div>
+					<div class="form_wrap">
+						<p><cms:text constant="title_form"/></p>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+					</div>
+				</cms:desktop>
+
+				<cms:mobile>
+					<div class="form_wrap">
+						<p><cms:text constant="title_form"/></p>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact"
+							/>
+					</div>
+					<div class="half">
+						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src"/>
+						<p><cms:text constant="slogan"/></p>
+						<a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<cms:svg file="site-sprite.svg" symbol="phone"/>
+						</a>
+					</div>
+				</cms:mobile>
+				<div class="bottom">
+					<cms:template file="stock/copyright.xml">
+						<param name="holder" value="copyright_holder"/>
+						<param name="text" value="copyright_text"/>
+						<param name="light" value="1"/>
+					</cms:template>
+				</div>
+
+			</footer>
+		</body>
+	</html>
+</document>
