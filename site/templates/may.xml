@@ -84,6 +84,7 @@
 					name="articles"
 					action="show"
 					text_id="strategy_article"
+					group="may_articles_popups"
 					template="stock/article_generic.xml"
 					>
 					<param name="title" value=""/>
@@ -96,6 +97,7 @@
 					name="articles"
 					action="show"
 					text_id="advertisment_article"
+					group="may_articles_popups"
 					template="stock/article_generic.xml"
 					>
 					<param name="title" value=""/>
@@ -108,6 +110,20 @@
 					name="articles"
 					action="show"
 					text_id="funding_article"
+					group="may_articles_popups"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+				<a href="#"><cms:svg file="site-sprite.svg" symbol="icon-cross"/></a>
+			</div>
+
+			<div id="farma" class="popup">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="farma_article"
+					group="may_articles_popups"
 					template="stock/article_generic.xml"
 					>
 					<param name="title" value=""/>
